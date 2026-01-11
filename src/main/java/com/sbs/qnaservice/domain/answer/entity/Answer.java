@@ -22,6 +22,7 @@ public class Answer {
 
   private LocalDateTime createDate;
 
-//  @ManyToOne
-//  private Question question;
+  // 하나의 질문의 답변이 여러개 달릴 수 있다.
+  @ManyToOne // 좌측은 많고 우측은 하나다.
+  private Question question;
 }
